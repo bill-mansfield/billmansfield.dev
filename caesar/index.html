@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Caesar encoder</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="scripts.js" async defer></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>This is a caesar shift encoder</h1>
+        <h2>Returns the result of having each alphabetic letter of the given text string shifted forward by the given amount, with wraparound. Case is preserved, and non-letters are unchanged.</h2>
+            <div class="col">
+                <h3>Type your message into the text area below</h3>
+                <textarea title="Enter message here" id="textarea"></textarea>
+                <h3>Enter the numeric key value you wish to shift your message by in the value input</h3>
+                <input id="input" title="Enter key here" value="e.g. 3">
+                <button id="encodeInput" type="submit" onclick="formSubmit()">Submit</button>
+            </div>
+        <br>
+        <br>
+        <h1>Here is your encoded message</h1>
+        <p id="encodedMessage"></p>
+
+    </body>
+    <style>
+        .col {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+        }
+    </style>
+</html>
