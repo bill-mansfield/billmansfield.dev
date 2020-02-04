@@ -1,0 +1,66 @@
+body {
+  background-color: rosybrown;
+}
+
+.calculator__wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vw;
+  flex-direction: column;
+
+  .title {
+    text-align: center;
+    color: purple;
+  }
+
+  .display__wrapper {
+    display: flex;
+    justify-content: center;
+
+    .display, .smalldisplay, .operator {
+      text-align: center;
+      height: 100px;
+      font-size: 36px;
+      color: plum;
+
+    }
+  }
+
+  .keypad__wrapper {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+    .keypad {
+      background-color: peru;
+      padding: 50px 0 50px 0;
+
+      .key {
+        background-color: mediumspringgreen;
+      }
+
+      .notInt {
+        background: cornflowerblue;
+      }
+
+      .equals {
+        width: 225px; 
+      }
+    }
+
+    .keypad, .operators {
+      flex-basis: 50%;
+    }
+
+    button {
+      height: 75px;
+      width: 75px;
+      border: white 1px solid;
+      margin-right: -4px;
+    }
+  }
+}
+
+
+/*# sourceMappingURL=styles.scss.map */

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="output.css">
+        <script src="scripts.js" async defer></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="calculator" class="calculator__wrapper">
+            <h1 class="title">Calculator</h1>
+            <div class="calculator">
+                <div class="display__wrapper">
+                    <div id="smallDisplay" class="smalldisplay">
+                    </div>
+                    <span id="operator" class="operator"></span>
+                    <div id="display" class="display">
+                        
+                    </div>
+
+                </div>
+                <div class="keypad__wrapper">
+                    <div class="keypad">
+                        <div class="row">
+                            <button id="c" class="key notInt">c</button>
+                            <button id="ce" class="key notInt">ce</button>
+                            <button id="<-" class="key notInt"><-</button>
+                            <button id="+" class="key notInt">+</button>
+                        </div>
+                        <div class="row">
+                            <button id="7" class="key">7</button>
+                            <button id="8" class="key">8</button>
+                            <button id="9" class="key">9</button>
+                            <button id="-" class="key notInt">-</button>
+                        </div>
+                        <div class="row">
+                            <button id="4" class="key">4</button>
+                            <button id="5" class="key">5</button>
+                            <button id="6" class="key">6</button>
+                            <button id="*" class="key notInt">*</button>
+                        </div>
+                        <div class="row">
+                            <button id="1" class="key">1</button>
+                            <button id="2" class="key">2</button>
+                            <button id="3" class="key">3</button>
+                            <button id="/" class="key notInt">/</button>
+                        </div>
+                        <div class="row">
+                            <button id="0" class="key">0</button>
+                            <button id="=" class="key notInt equals">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

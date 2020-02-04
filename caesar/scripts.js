@@ -2,6 +2,17 @@
 function formSubmit() {
     var inputMessage = document.getElementById("textarea").value;
     var inputShift = document.getElementById("input").value;
+
+	if (!/^-?\d+$/.test(inputShift)) {
+		alert("Shift is not an integer");
+		return;
+	}
+
+    if (inputShift < 0 || inputShift >= 26) {
+		alert("Shift is out of range");
+		return;
+	}
+
     document.getElementById("encodedMessage").innerHTML = ceaserCipher(inputMessage, inputShift);
 }
 
